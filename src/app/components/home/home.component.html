@@ -1,0 +1,139 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+  <div class="container">
+    <div class="navbar-brand logo" (click)="scrollToFirstSection()">
+      <span class="first-part">ME</span>
+      <span class="second-part">DI.</span>
+    </div>
+    <div class="collapse navbar-collapse">
+      <div class="mx-auto ">
+      <ul class="navbar-nav">
+        <li class="nav-item menu" (click)="scrollToFirstSection()">
+          <a class="nav-link">Home</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link" (click)="scrollToSecondSection()">Art</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link" (click)="scrollToThirdSection()">About</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link" (click)="scrollToFourSection()">Contact</a>
+        </li>
+      </ul>
+    </div>
+      <button class="btn" routerLink="/login">Login</button>
+      <button class="btn" routerLink="/signup">Sign up</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner Image  -->
+<div class="banner-image w-100 vh-100 d-flex align-items-center" id="section1">
+  <div class="container">
+    <div class="content text-end castom-font-size">
+      <p>
+        <span class="first-part">Meditation </span>
+        <span class="text-white">is the </span>
+      </p>
+      <br>
+      <p>
+        <span class="text-white"> key to </span>
+        <span class="first-part">happiness</span>
+      </p>
+      <button class="btn castom-btn mt-4" routerLink="/login">Get started Now</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-5" id="section2">
+  <div class="text-center">
+    <h2 class="title">Art of meditation</h2>
+    <div class="mb-5 mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-8 px-4">
+          It is a theme that combines the art of meditation with the desire for peace, freedom and connection with nature.
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="row row-cols-3 align-items-center">
+    <div class="col text-center">
+      <img src="../../../assets/images/icon1.png" alt="" class="med_icon">
+      <div class="title mt-3">
+        Calmness
+      </div>
+      <div class="text-center mt-3 px-4">
+        Calmness refers to a state of tranquility, serenity, and inner peace. It is a quality of being mentally and emotionally composed, free from agitation, stress, or excessive excitement. Cultivating calmness is essential for overall well-being and can contribute to a more balanced and fulfilling life.
+      </div>
+    </div>
+    <div class="col text-center">
+      <img src="../../../assets/images/icon2.png" alt="" class="med_icon">
+      <div class="title mt-3">
+        Freedom
+      </div>
+      <div class="text-center mt-3 px-4">
+        Freedom in the context of the art of meditation means a sense of inner freedom from the limitations of mind and emotions. It can be a feeling of detachment from internal obstacles, stereotypes, stress and negative thought patterns.
+      </div>
+    </div>
+    <div class="col text-center">
+      <img src="../../../assets/images/icon3.png" alt="" class="med_icon">
+      <div class="title mt-3">
+        Nature
+      </div>
+      <div class="text-center mt-3 px-4">
+        Nature is one of the most important sources of inspiration for the art of meditation. Connecting with nature can give us a sense of peace, presence and harmony. The open space of nature, the greenness of trees, the rustling of leaves or the calmness of water can serve as an object of awareness during meditation.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-castom" id="section3"> <!-- Відступ який робить знизу білу частину, потрбіно забрати і зробити внутнішній відступ для футера -->
+  <div class="container ">
+  <h2 class="title text-center pt-3">About</h2>
+  <div class="row py-5">
+    <div class="col-md-7">
+      <img src="../../../assets/images/medit.png" alt="Med">
+    </div>
+    <div class="col text-center py-5">
+      <p>
+        Hello! Welcome to our meditation web app.
+        <br><br><br>
+        Our web application is dedicated to the art of meditation and provides a unique opportunity to immerse yourself in the world of peace, relaxation and inner peace. We believe in the power of meditation as a tool for a balanced life and self-development.
+        <br><br><br>
+        The main goal of our web application is to provide users with a simple, convenient and effective way to start or continue their meditation practice. With our variety of meditation exercises, audio guides, and specially curated programs, you'll be able to find the one that best suits your needs and goals.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid castom-footer-bg" id="section4"><!-- тег footer прибрав через те що не зміг змінити колір -->
+  <div class="container text-white pt-5">
+    <div class="text-center">
+      <div class="">UPSKILL FOR A BETTER FUTURE</div>
+      <h2>Request More Information</h2>
+      <div class="">Lift Media, LLC is a clinical stage healthcare company which is developing a unique.</div>
+      <button class="btn">Contact Us</button>
+    </div>
+    <div class="row row-cols-3 pb-3">
+      <div class="text-start col">
+        <div class="text-white logo pt-2" (click)="scrollToFirstSection()">
+          <span class="first-part">ME</span>
+          <span class="second-part">DI.</span>
+        </div>
+      </div>
+      <div class="text-center pt-3 col">
+        <div class="">© 2019 Lift Media, LLC</div>
+      </div>
+      <div class="text-end col">
+        <img src="../../../assets/images/Facebook.png" alt="" class="med_social_networks">
+        <img src="../../../assets/images/Instagram.png" alt="" class="med_social_networks">
+        <img src="../../../assets/images/linkedin.png" alt="" class="med_social_networks">
+        <img src="../../../assets/images/Youtube.png" alt="" class="med_social_networks">
+      </div>
+    </div>
+  </div>
+</div>
+
+

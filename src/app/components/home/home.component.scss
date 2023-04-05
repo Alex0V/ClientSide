@@ -1,0 +1,73 @@
+.banner-image {
+    background-image: url('../../../assets/images/Hero-backgrorund.png');
+    background-size: cover;
+}
+
+.first-part{
+    color: #CDB97E;
+
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.btn{
+    width:150px;
+    height:45px;
+    border-radius:45px;
+    letter-spacing:2px;
+    font-weight:bold;
+    color: #fff;
+    border: none;
+    margin: 0px 0px 0px 10px;
+    background-color: #CDB97E;
+    box-shadow:0px 8px 15px rgba(0,0,0,0.3);
+    transition:all 0.3s ease;
+    &:hover{
+        color: #CDB97E;
+        border: 2px solid ;
+        background-color:#fff;
+        border-color: #CDB97E;
+        
+    }
+}
+.castom-btn{
+    
+    width:250px;
+}
+
+.menu{
+    padding: 0px 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    a{
+        color: #fff;
+    }
+    a:hover{
+        color: #CDB97E;
+    }
+}
+
+.med_icon{
+    height: 50px;
+    width: 50px;
+}
+.bg-castom{
+    background-color: #F3F3F3;
+}
+
+.castom-footer-bg{
+    background-color: #172330;
+}
+
+.testclas{
+    background-color:black;
+    border-color: black;
+}
+.med_social_networks{
+    padding: 0px 10px 0px 10px;
+}
+.castom-font-size{
+    font-size: 60px;
+}

@@ -1,0 +1,28 @@
+<div class="container pt-4">
+  <h1 class="text-center mb-4">New meditation</h1>
+  <form [formGroup]="myForm" (ngSubmit)="addMeditation()">
+    <div class="form-row">
+      <div class="form-group col-6 mb-4">
+        <label for="meditationName">Meditation Name: </label>
+        <input type="text" class="form-control" formControlName="meditationName" id="meditationName">
+      </div>
+
+      <div class="form-group col-6 mb-4">
+        <label for="meditationDescription">Description: </label>
+        <textarea class="form-control" formControlName="meditationDescription" id="meditationDescription" rows="5"></textarea>
+      </div>
+
+      <div class="form-group col-6 mb-4">
+        <label for="meditationDuration">Duration: </label>
+        <input type="text" class="form-control" formControlName="meditationDuration" id="meditationDuration">
+      </div>
+
+      <div class="form-group col-6 mb-4">
+        <label for="fileUploader">File Uploader </label>
+        <input type="file" class="form-control-file" id="fileUploader" (change)="onFileSelected($event)" accept=".jpeg,.jpg">
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="myForm.invalid">Add meditation</button>
+    </div>
+  </form>
+</div>

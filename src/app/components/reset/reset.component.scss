@@ -1,0 +1,5 @@
+//прибираємо дефолтний значок для проказу та приховування пароля
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}

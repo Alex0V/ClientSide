@@ -1,0 +1,21 @@
+<div class="container text-center pt-4">
+    <h1>Meditations</h1>
+    <div class="row justify-content-end">
+        <div class="col-auto">
+            <button class="btn btn-primary" *ngIf="role === 'Admin'" (click)="goToAdd()">Add Meditation</button>
+        </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <div class="row row-cols-4">
+            <div class="col card-wrapper" *ngFor="let session of meditation" (click)="showSessions(session.id)">
+                <mat-card class="example-card">
+                    <img mat-card-image src= "{{session.s3UrlFoto}}">
+                    <mat-card-header class="center-text">
+                        <mat-card-title>{{session.name}}</mat-card-title>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

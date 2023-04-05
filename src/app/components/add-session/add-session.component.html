@@ -1,0 +1,17 @@
+<div class="container pt-4">
+  <h1 class="text-center mb-4">New session</h1>
+  <form [formGroup]="myForm" (ngSubmit)="addSession()">
+    <div class="form-row">
+      <div class="form-group col-6 mb-4">
+        <label for="sessionName">Session Name: </label>
+        <input type="text" class="form-control" formControlName="sessionName" id="sessionName">
+      </div>
+      <div class="form-group col-6 mb-4">
+        <label for="fileUploader">File Uploader </label>
+        <input type="file" class="form-control-file" id="fileUploader" (change)="onFileSelected($event)" accept=".mp3,.mp4">
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="myForm.invalid">Add session</button>
+    </div>
+  </form>
+</div>
