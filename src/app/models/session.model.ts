@@ -3,4 +3,5 @@ export interface Session{
     meditationId: number;
     sessionName: string;
     s3UrlAudio: string;
+    duration: string;
 }

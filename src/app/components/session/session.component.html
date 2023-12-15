@@ -1,8 +1,8 @@
 <div class="container pt-4">
   <div *ngIf="meditation">
     <h1 class="text-center mb-4">{{meditation.name}}</h1>
-    <div class="description mb-3">Description :{{meditation.description}}</div>
-    <div class="execution-time mb-3">Execution time :{{meditation.duration}}</div>
+    <div class="description mb-3">Description:{{" "+meditation.description}}</div>
+    <div class="execution-time mb-3">Execution time:{{" "+meditation.duration}}</div>
   </div>
   <div class="row justify-content-end">
     <div class="col-auto">
@@ -14,23 +14,35 @@
         <button class="btn btn-primary d-block mt-4" *ngIf="role === 'Admin'" (click)="goToAddSession()">Add Session</button>
     </div>
   </div>
+  <div class="row pt-4">
+    <div class="col">
+      <audio controls #audioPlayer class="full-width-audio">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
   <div class="text-center mt-4">
-    <table class="table">
+    <table class="table table-hover">
       <thead>
         <tr>
-          <th>SessionName</th>
+          <th>№</th>
+          <th>Sessions</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of session">
-          <td (click)="displayURL(item.s3UrlAudio)">
-            <div>
-              {{item.sessionName}}
-            </div>
-          </td>
-        </tr>
+        <ng-container *ngFor="let item of session; let i = index">
+          <tr (click)="displayURL(item.s3UrlAudio, i); addToListen(item.id)" [class.active]="activeIndex === i">
+            <td>{{i+1}}</td>
+            <td>{{item.sessionName}}</td>
+          </tr>
+        </ng-container>
       </tbody>
     </table>
+  </div>
+  <div class="row justify-content-start">
+    <div class="col-auto">
+        <h1 class="d-block py-4">Recommended meditations</h1>
+    </div>
   </div>
   <div class="text-center">
     <div class="row row-cols-4">

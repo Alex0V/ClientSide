@@ -10,12 +10,12 @@ export const navbarData = [
         routeLink: 'progress',
         icon: 'fal fa-chart-bar',
         label: 'Progress',
-        roles: ['user']
+        roles: ['User']
     },
     {
         routeLink: 'settings',
         icon: 'fal fa-cog',
         label: 'Settings',
-        roles: ['User', 'Admin']
+        roles: []
     }
 ];
